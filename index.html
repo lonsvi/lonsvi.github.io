@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MidNight</title>
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Smooth scrolling for anchor links */
@@ -33,9 +34,10 @@
 </head>
 <body class="bg-gray-100 font-sans text-gray-800">
     <!-- Header -->
-    <header class="bg-white shadow sticky top-0 z-50">
+    <header class="bg-white/60 backdrop-blur-md shadow-none sticky top-0 z-50">
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="text-2xl font-bold text-gray-800">MidNight</div>
+             <link rel="icon" type="image/jpeg" href="images/logo.jpg">
             <ul class="flex space-x-6">
                 <li><a href="#about" class="hover:text-gray-600">О нас</a></li>
                 <li><a href="#kittens" class="hover:text-gray-600">Наши котята</a></li>
@@ -47,26 +49,44 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-cover bg-center h-96 flex items-center justify-center" style="background-image: url('https://placekitten.com/1600/400')">
-        <div class="text-center text-white">
+    <section class="bg-cover bg-center min-h-[500px] md:min-h-[800px] flex items-center justify-center" style="background-image: url('https://seuppcdn01.1x.com/images/user/67697c86c5dc3140c23604905c70c23c-hd2.jpg'); image-rendering: auto;">
+        <div class="text-center text-white bg-black/80 p-8 rounded-2xl shadow-lg">
+            
             <h1 class="text-4xl md:text-5xl font-bold mb-4">МейнКуны</h1>
             <p class="text-xl md:text-2xl">Питомник "Midnight" пpедлaгает вaшему вниманию котят поpоды мeйн-кун от родителeй чeмпиoнов.</p>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16">
+    <section id="about" class="py-16 bg-gradient-to-b from-white via-gray-50 to-white"></section>
+    <p> ㅤ</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">О нас и наших котятах</h2>
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">О наших котят</h2>
-            <div class="max-w-3xl mx-auto text-center">
-                <p class="mb-4"><strong></strong> Рoдилиcь 21.03.25г, мaльчик и тpи дeвочки (2 девочки полидaкты)
-Kотята с полным пакeтoм дoкументoв, пpивиты и пpиучeны кo всем примудpocтям, к пeрeeзду будут гoтовы в cepeдине июня пoсле вaкцинации и кaрaнтинa.
-Цены у нac начинaются от 30т.p, в завиcимоcти oт цели пpиобpeтения🤗
-Бpoнь на котёнка 5000т.р.</p>
+           
+            <div class="max-w-3xl mx-auto text-center text-lg md:text-xl text-gray-700 space-y-5 bg-white/80 rounded-2xl shadow-lg p-8">
+                <p>
+                    <span class="font-semibold text-gray-900">Питомник элитных кошек породы Мейн-кун</span> предлагает вашему вниманию шикарных деток от родителей чемпионов.
+                </p>
+                <p>
+                    Мы молодой, развивающийся питомник, но уже имеем <span class="text-indigo-600 font-semibold">чемпионские титулы</span>!
+                </p>
+                <div class="bg-indigo-50 rounded-lg p-4 my-4 inline-block">
+                    <p class="mb-1"><span class="font-semibold">Дата рождения:</span> <span class="text-indigo-700">21.03.25</span></p>
+                    <p class="mb-1"><span class="font-semibold">В помёте:</span> мальчик и три девочки <span class="italic text-indigo-700">(2 девочки полидакты)</span></p>
+                </div>
+                <ul class="text-left list-disc list-inside mx-auto max-w-xl mb-4 space-y-1">
+                    <li>Котята с полным пакетом документов, привиты и приучены ко всем премудростям.</li>
+                    <li>К переезду будут готовы в середине июня после вакцинации и карантина.</li>
+                    <li>Цены начинаются от <span class="font-semibold text-green-700">30 000 ₽</span>, в зависимости от цели приобретения 🤗</li>
+                    <li>Бронь на котёнка — <span class="font-semibold text-indigo-700">5 000 ₽</span></li>
+                    <li>Котята находятся в <span class="font-semibold">Иркутске</span>, но у нас отрегулирована бережная доставка в ваш регион!</li>
+                </ul>
                 
+            </div>
         </div>
+    
     </section>
-
+<p> ㅤ</p>
     <!-- Kittens Section -->
     <section id="kittens" class="bg-white py-16">
         <div class="container mx-auto px-4">
@@ -74,30 +94,40 @@ Kотята с полным пакeтoм дoкументoв, пpивиты и п
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Kitten 1 -->
                 <div class="card bg-gray-50 rounded-lg shadow p-6 text-center">
-                    <img src="https://placekitten.com/300/300" alt="Максимус" class="w-full h-48 object-cover rounded mb-4">
-                    <h3 class="text-xl font-semibold">Максимус</h3>
-                    <p class="text-gray-600">Мальчик, 2 года</p>
+                    <img src="https://placekitten.com/300/300" alt="Зефир" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-semibold">Зефир</h3>
+                    <p class="text-gray-600">Мальчик</p>
                     <p class="my-2">Великолепный мейн-кун с отличной родословной. Дружелюбный и игривый.</p>
-                    <p class="text-lg font-bold">85 000 ₽</p>
-                    <button class="btn-primary text-white px-4 py-2 rounded mt-4" onclick="reserveKitten('Максимус')">Забронировать</button>
+                    <p class="text-lg font-bold">≈ 30 000 ₽</p>
+                    
                 </div>
                 <!-- Kitten 2 -->
                 <div class="card bg-gray-50 rounded-lg shadow p-6 text-center">
-                    <img src="https://placekitten.com/301/300" alt="Луна" class="w-full h-48 object-cover rounded mb-4">
-                    <h3 class="text-xl font-semibold">Луна</h3>
-                    <p class="text-gray-600">Девочка, 3 месяца</p>
+                    <img src="https://placekitten.com/301/300" alt="Забава" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-semibold">Забава</h3>
+                    <p class="text-gray-600">Девочка</p>
                     <p class="my-2">Очаровательная кошечка с пушистой шерстью и ласковым характером.</p>
-                    <p class="text-lg font-bold">65 000 ₽</p>
-                    <button class="btn-primary text-white px-4 py-2 rounded mt-4" onclick="reserveKitten('Луна')">Забронировать</button>
+                    <p class="text-lg font-bold">≈ 30 000 ₽</p>
+                    
                 </div>
                 <!-- Kitten 3 -->
                 <div class="card bg-gray-50 rounded-lg shadow p-6 text-center">
-                    <img src="https://placekitten.com/302/300" alt="Рыжик" class="w-full h-48 object-cover rounded mb-4">
-                    <h3 class="text-xl font-semibold">Рыжик</h3>
-                    <p class="text-gray-600">Мальчик, 1 год</p>
-                    <p class="my-2">Красивый рыжий кот с янтарными глазами. Очень умный и активный.</p>
-                    <p class="text-lg font-bold">75 000 ₽</p>
-                    <button class="btn-sold text-white px-4 py-2 rounded mt-4" disabled>Продан</button>
+                    <img src="https://placekitten.com/302/300" alt="Злата" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-semibold">Злата</h3>
+                    <p class="text-gray-600">Девочка</p>
+                    <p class="my-2">Красивая. Очень умная и активная.</p>
+                    <p class="text-lg font-bold">≈ 30 000 ₽</p>
+                    
+                </div>
+                <!-- Kitten 4 -->
+                <div class="card bg-gray-50 rounded-lg shadow p-6 text-center " >
+                   
+                    <img src="https://placekitten.com/302/300" alt="Зара" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-semibold">Зара</h3>
+                    <p class="text-gray-600">Девочка</p>
+                    <p class="my-2">Красивая девочка </p>
+                    <p class="text-lg font-bold">≈ 30 000 ₽</p>
+                    
                 </div>
             </div>
         </div>
@@ -124,63 +154,27 @@ Kотята с полным пакeтoм дoкументoв, пpивиты и п
         </div>
     </section>
 
-    <!-- Reviews Section -->
-    <section id="reviews" class="bg-white py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Отзывы наших клиентов</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="card bg-gray-50 rounded-lg shadow p-6">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center text-xl font-bold">А</div>
-                        <h3 class="ml-4 text-lg font-semibold">Анна К.</h3>
-                    </div>
-                    <p>Мы приобрели котенка в питомнике МейнКун Элит и очень довольны! Наш Барсик вырос в красивого и здорового кота с отличным характером.</p>
-                </div>
-                <div class="card bg-gray-50 rounded-lg shadow p-6">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center text-xl font-bold">Д</div>
-                        <h3 class="ml-4 text-lg font-semibold">Дмитрий С.</h3>
-                    </div>
-                    <p>Отличный питомник с профессиональным подходом. Все документы и прививки в порядке, котенок здоровый и социализированный.</p>
-                </div>
-                <div class="card bg-gray-50 rounded-lg shadow p-6">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center text-xl font-bold">Е</div>
-                        <h3 class="ml-4 text-lg font-semibold">Елена В.</h3>
-                    </div>
-                    <p>Уже второй раз берем котенка в этом питомнике. Очень довольны качеством и сервисом. Рекомендую!</p>
-                </div>
-            </div>
-        </div>
-    </section>
+   
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16">
-        <div class="container mx-auto px-4">
+    <section id="contact" class="bg-white py-16">
+        <div class="container mx-auto px-4 ">
             <h2 class="text-3xl font-bold text-center mb-8">Связаться с нами</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="gtext-3xl font-bold text-center mb-8">
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Контактная информация</h3>
                     <p class="mb-2"><strong>Телефон:</strong> +7 (999) 123-45-67</p>
                     <p class="mb-2"><strong>Email:</strong> info@maincoon-elite.ru</p>
                     <p class="mb-2"><strong>Адрес:</strong> г. Москва, ул. Кошачья, д. 1</p>
-                    <h3 class="text-xl font-semibold mt-6 mb-4">Мы в соцсетях</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-600 hover:text-gray-800">Facebook</a>
-                        <a href="#" class="text-gray-600 hover:text-gray-800">Instagram</a>
-                        <a href="#" class="text-gray-600 hover:text-gray-800">ВКонтакте</a>
-                    </div>
+                    <p> ㅤ</p>
+                    <h3 class="text-3xl font-bold text-center mb-8">Мы в соцсетях</h3>
+                    
+                        <a href="#" class="text-gray-600 hover:text-gray-800 text-3xl font-bold text-center mb-8">Facebook</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-800 text-3xl font-bold text-center mb-8">Instagram</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-800 text-3xl font-bold text-center mb-8">ВКонтакте</a>
+                    
                 </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Отправить сообщение</h3>
-                    <div class="space-y-4">
-                        <input type="text" id="name" placeholder="Имя" class="w-full p-2 border rounded">
-                        <input type="email" id="email" placeholder="Email" class="w-full p-2 border rounded">
-                        <input type="tel" id="phone" placeholder="Телефон" class="w-full p-2 border rounded">
-                        <textarea id="message" placeholder="Сообщение" class="w-full p-2 border rounded h-32"></textarea>
-                        <button class="btn-primary text-white px-4 py-2 rounded" onclick="sendMessage()">Отправить</button>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -188,14 +182,14 @@ Kотята с полным пакeтoм дoкументoв, пpивиты и п
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-4 text-center">
-            <h3 class="text-2xl font-bold mb-4">МейнКун Элит</h3>
+            <h3 class="text-2xl font-bold mb-4">MidNight</h3>
             <p class="mb-4">Элитные мейн-куны для вашего дома</p>
             <div class="flex justify-center space-x-6 mb-4">
-                <a href="#about" class="hover:text-gray-300">О нас</a>
+                <a href="#about" class="hover:text-gray-300">О нас и наших котятах</a>
                 <a href="#kittens" class="hover:text-gray-300">Наши котята</a>
                 <a href="#contact" class="hover:text-gray-300">Контакты</a>
             </div>
-            <p>© 2025 МейнКун Элит. Все права защищены.</p>
+            <p>© 2025 MidNight. </p>
         </div>
     </footer>
 
