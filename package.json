@@ -1,0 +1,23 @@
+{
+  "name": "lonsvi.github.io",
+  "version": "1.0.0",
+  "description": "MidNight cattery website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^4.1.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lonsvi/lonsvi.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lonsvi/lonsvi.github.io/issues"
+  },
+  "homepage": "https://github.com/lonsvi/lonsvi.github.io#readme"
+}
