@@ -1,84 +1,97 @@
-.__drawer_container {
-  position: fixed;
-  pointer-events: auto !important;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(16px);
-  z-index: 10000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: backdrop-filter 1s ease;
-}
-
-.__drawer_container.__hidden {
-  visibility: hidden;
-  pointer-events: none !important;
-  backdrop-filter: blur(0);
-}
-
-.__auth_close_button {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  background: rgb(0, 0, 0, 0.8);
-  border: none;
-  mask: url(https://static.acflare.com/x.svg) no-repeat center;
-  mask-size: contain;
-  transition: opacity 0.3s ease;
-}
-
-.__auth_close_button:hover {
-  background: rgb(0, 0, 0, 1);
-}
-
-@media (prefers-color-scheme: dark) {
-  .__drawer_container {
-    background: rgba(0, 0, 0, 0.4);
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
   }
 
-  .__auth_close_button {
-    background: rgb(255, 255, 255, 0.8);
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
   }
 
-  .__auth_close_button:hover {
-    background: rgb(255, 255, 255, 1);
-  }
-}
-
-.__drawer_frame {
-  width: 100%;
-  height: 100%;
-  max-width: 400px;
-  max-height: 340px;
-  border: none;
-  border-radius: 16px;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.__drawer_frame.__hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
-@media (max-width: 640px) {
-  .__drawer_container {
-    justify-content: flex-end;
+  /* Custom animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
-  .__drawer_frame {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-    max-width: 100%;
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .section-container {
+    padding: 4rem 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .section-container {
+      padding: 6rem 2rem;
+    }
+  }
+
+  .hero-gradient {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  }
+
+  /* Hover effects */
+  .hover-lift:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+  }
+
+  /* Rating stars */
+  .star {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .star-full {
+    fill: hsl(var(--primary));
+    stroke: hsl(var(--primary));
+  }
+
+  .star-half {
+    fill: hsl(var(--primary));
+    stroke: hsl(var(--primary));
+  }
+
+  .star-empty {
+    fill: none;
+    stroke: hsl(var(--muted-foreground));
   }
 }

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "cuid1",
+    "name": "Максимус",
+    "age": "2 года",
+    "price": 85000,
+    "description": "Великолепный мейн-кун с дружелюбным характером",
+    "imageUrl": "images/cat1.jpg",
+    "gender": "Мальчик",
+    "available": true,
+    "createdAt": "2025-05-22T00:00:00Z"
+  }
+]
